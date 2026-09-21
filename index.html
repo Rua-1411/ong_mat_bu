@@ -2,14 +2,68 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xem tài liệu PDF</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <a href="https://rua-1411.github.io/Qu-n-l-i-m-ti-u-h-c/">
+ Og mặt bự
+</a>
+
+  <title>Ong mặt bự</title>
+
   <style>
-    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#202124}
-    iframe{display:block;width:100%;height:100%;border:0}
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #202124;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 20px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pdf-container {
+      width: min(90vw, 500px);
+      max-height: 95vh;
+
+      /* Tỷ lệ dọc 9:16 */
+      aspect-ratio: 9 / 16;
+
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: 10px;
+
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
   </style>
 </head>
+
 <body>
-  <iframe src="696932964_1576067744521580_1469210194418557271_n.pdf" title="Tài liệu PDF"></iframe>
+  <div class="pdf-container">
+    <iframe
+      src="696932964_1576067744521580_1469210194418557271_n.pdf"
+      title="Tài liệu PDF">
+    </iframe>
+  </div>
 </body>
 </html>
